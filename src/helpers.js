@@ -54,6 +54,7 @@ const getItemSpec = (entryData) => {
     }
 
     if (entryData.PostPage) {
+        console.log(entryData);
         const itemData = entryData.PostPage[0].graphql.shortcode_media;
         return {
             pageType: PAGE_TYPES.POST,
